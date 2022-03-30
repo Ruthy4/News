@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_brown">#322720</color>
+    <color name="burnt_orange">#D0A23C</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#D0A23C</color>
+    <color name="pink_200">#FFEC407A</color>
+    <color name="pink_700">#FFC2185B</color>
 </resources>
