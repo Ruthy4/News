@@ -7,10 +7,13 @@ import com.androiddevs.mvvmnewsapp.models.Article
 import com.androiddevs.mvvmnewsapp.models.NewsResponse
 import com.androiddevs.mvvmnewsapp.repository.NewsRepository
 import com.androiddevs.mvvmnewsapp.util.Resource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import javax.inject.Inject
 
-class NewsViewModel(val repository: NewsRepository): ViewModel() {
+@HiltViewModel
+class NewsViewModel @Inject constructor(private val repository: NewsRepository): ViewModel() {
 
     val breakingNews : MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var breakingNewsPage = 1
@@ -50,7 +53,6 @@ class NewsViewModel(val repository: NewsRepository): ViewModel() {
                 return Resource.Success(breakingNewsResponse ?: resultResponse)
             }
         }
-
         return Resource.Error(response.message())
     }
 
