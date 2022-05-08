@@ -1,4 +1,4 @@
-package com.androiddevs.mvvmnewsapp.ui
+package com.androiddevs.mvvmnewsapp.presentation.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

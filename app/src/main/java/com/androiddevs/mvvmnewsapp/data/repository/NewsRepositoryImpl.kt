@@ -1,8 +1,8 @@
-package com.androiddevs.mvvmnewsapp.repository
+package com.androiddevs.mvvmnewsapp.data.repository
 
-import com.androiddevs.mvvmnewsapp.api.NewsAPI
-import com.androiddevs.mvvmnewsapp.db.ArticlesDatabase
-import com.androiddevs.mvvmnewsapp.models.Article
+import com.androiddevs.mvvmnewsapp.data.remote.api.NewsAPI
+import com.androiddevs.mvvmnewsapp.data.local.db.ArticlesDatabase
+import com.androiddevs.mvvmnewsapp.data.models.Article
 
 class NewsRepositoryImpl(private val newsApi: NewsAPI, private val database: ArticlesDatabase) :
     NewsRepository {

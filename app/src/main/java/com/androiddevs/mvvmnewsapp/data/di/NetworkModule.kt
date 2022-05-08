@@ -1,12 +1,9 @@
-package com.androiddevs.mvvmnewsapp.di
+package com.androiddevs.mvvmnewsapp.data.di
 
 import android.app.Application
 import androidx.room.Room
-import com.androiddevs.mvvmnewsapp.api.NewsAPI
-import com.androiddevs.mvvmnewsapp.db.ArticleDao
-import com.androiddevs.mvvmnewsapp.db.ArticlesDatabase
-import com.androiddevs.mvvmnewsapp.repository.NewsRepository
-import com.androiddevs.mvvmnewsapp.repository.NewsRepositoryImpl
+import com.androiddevs.mvvmnewsapp.data.remote.api.NewsAPI
+import com.androiddevs.mvvmnewsapp.data.local.db.ArticlesDatabase
 import com.androiddevs.mvvmnewsapp.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides

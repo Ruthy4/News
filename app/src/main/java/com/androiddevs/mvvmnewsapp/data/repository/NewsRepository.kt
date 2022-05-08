@@ -1,11 +1,8 @@
-package com.androiddevs.mvvmnewsapp.repository
+package com.androiddevs.mvvmnewsapp.data.repository
 
 import androidx.lifecycle.LiveData
-import com.androiddevs.mvvmnewsapp.api.NewsAPI
-import com.androiddevs.mvvmnewsapp.db.ArticleDao
-import com.androiddevs.mvvmnewsapp.db.ArticlesDatabase
-import com.androiddevs.mvvmnewsapp.models.Article
-import com.androiddevs.mvvmnewsapp.models.NewsResponse
+import com.androiddevs.mvvmnewsapp.data.models.Article
+import com.androiddevs.mvvmnewsapp.data.models.NewsResponse
 import retrofit2.Response
 
 interface NewsRepository {

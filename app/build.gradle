@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: "dagger.hilt.android.plugin"
@@ -31,6 +30,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    viewBinding {
+        enabled true
     }
 }
 
@@ -80,4 +83,7 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:2.2.5"
     kapt "com.google.dagger:hilt-android-compiler:2.38.1"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
+
+    //shimmer effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 }
